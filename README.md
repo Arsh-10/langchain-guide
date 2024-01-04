@@ -9,7 +9,7 @@ Welcome to the LangChain Guide! This repository serves as a comprehensive resour
 This Python script demonstrates how to use LangChain for chat completion. By leveraging the OpenAI API, it allows users to input a section of text and receive a completed version based on the context and language patterns.
 
 **Usage:**
-```bash
+```
 python chat_completion.py
 ```
 
@@ -18,12 +18,29 @@ python chat_completion.py
 The `review_sentiment_analysis.py` file contains code for sentiment analysis on dataframes from a CSV file. It utilizes LangChain to evaluate and classify the sentiment of each review as either negative or positive.
 
 **Usage:**
-```bash
+```
 python review_sentiment_analysis.py
 ```
 
+### 3. `pdf_embeddings.py`
+
+The `pdf_embeddings.py` script demonstrates how to use embeddings in LangChain with PDF files. It first loads the PDF using PyMuPDFLoader, uses CharacterTextSplitter to make chunk sizes, and employs the embedding model `intfloat` provided by HuggingFaceEmbeddings. It uses FAISS as a vectordb and finally performs a similarity search based on the query given by the user.
+
+**Usage:**
+```bash
+python pdf_embeddings.py
+```
+
+### 4. `txt_embeddings.py`
+
+The `txt_embeddings.py` script performs the same functionality as `pdf_embeddings.py` but is tailored for text (txt) files.
+
+**Usage:**
+```
+python txt_embeddings.py
+```
+
 **Requirements:**
-- Python 3.x
 - Dependencies listed in `requirements.txt`
 
 ## Getting Started:
