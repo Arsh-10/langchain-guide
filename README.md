@@ -58,6 +58,15 @@ The `qa_txt.py` script performs similar functionality as `qa_pdf.py`, but it's t
 python qa_txt.py
 ```
 
+#### 7. `qd_pdf.py`
+
+The `qd_pdf.py` script illustrates the utilization of Qdrant, a cloud-based vector store platform, for processing PDF documents. It employs LangChain to load a PDF file through PyMuPDFLoader, segment the text into chunks using CharacterTextSplitter, employ embeddings from HuggingFaceEmbeddings (`sentence-transformers/all-mpnet-base-v2` model), create vectors in Qdrant using Qdrant's client, and execute a similarity search in the collection based on the provided query.
+
+**Usage:**
+```
+python qd_pdf.py
+```
+
 These comments help users understand the functionalities and usage instructions for each script, enhancing the clarity and usability of the provided code files.
 
 **Requirements:**
