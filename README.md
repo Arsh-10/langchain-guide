@@ -27,7 +27,7 @@ python review_sentiment_analysis.py
 The `pdf_embeddings.py` script demonstrates how to use embeddings in LangChain with PDF files. It first loads the PDF using PyMuPDFLoader, uses CharacterTextSplitter to make chunk sizes, and employs the embedding model `intfloat` provided by HuggingFaceEmbeddings. It uses FAISS as a vectordb and finally performs a similarity search based on the query given by the user.
 
 **Usage:**
-```bash
+```
 python pdf_embeddings.py
 ```
 
@@ -39,6 +39,26 @@ The `txt_embeddings.py` script performs the same functionality as `pdf_embedding
 ```
 python txt_embeddings.py
 ```
+
+#### 5. `qa_pdf.py`
+
+This Python script demonstrates how to process PDF files for Question Answering (QA) using LangChain. It loads a PDF document using PyMuPDFLoader, splits the text into chunks using CharacterTextSplitter, utilizes embeddings from HuggingFaceEmbeddings (`intfloat` model), creates vectors with FAISS, and executes a similarity search to retrieve answers based on the user query.
+
+**Usage:**
+```
+python qa_pdf.py
+```
+
+#### 6. `qa_txt.py`
+
+The `qa_txt.py` script performs similar functionality as `qa_pdf.py`, but it's tailored for text (txt) files. It loads a text file using TextLoader, splits the text into chunks using CharacterTextSplitter, applies embeddings from HuggingFaceEmbeddings (`intfloat` model), generates vectors using FAISS, and executes a similarity search to retrieve answers based on the user query.
+
+**Usage:**
+```
+python qa_txt.py
+```
+
+These comments help users understand the functionalities and usage instructions for each script, enhancing the clarity and usability of the provided code files.
 
 **Requirements:**
 - Dependencies listed in `requirements.txt`
